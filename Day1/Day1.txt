@@ -1,0 +1,43 @@
+* Version Control-  
+
+    Version Controls are software tools that help software teams manage changes to source  code over time.
+    Creating/Cloning a Repository
+
+* Git Clone 
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY 
+
+* Branching
+
+	git branch <branch name> 
+
+* Push, Pull, Commit, Revert, View Logs
+
+    Push - git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. 
+    Pull - The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+
+    Commit - The git commit command captures a snapshot of the project's currently staged changes.	
+   
+    git commit -a 
+	git commit  -m “message” 
+	git  commit -am “Message”
+	
+	Revert - 
+	
+	The git revert command can be considered an 'undo' type command, however, it is not a traditional undo operation. Instead of removing the commit from the project history, it figures out how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content.
+
+ 
+ * Stash
+
+    git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+
+
+* Conflict Resolution
+	
+    https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
+	
+
+* Merge, Rebase
+	
+    Merge - Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches. ... Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence. 
+    Rebase is an action in Git that allows you to rewrite commits from one branch onto another branch. Essentially, Git is deleting commits from one branch and adding them onto another.
+
