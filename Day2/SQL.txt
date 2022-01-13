@@ -1,0 +1,27 @@
+------Topics To explore
+
+Creating Database
+
+Create tables
+
+Data types
+
+Insert/Update/Delete/Read data from Table(CRUD Operation)
+
+Aggregate Functions
+
+Relationships, Type of joins
+
+Group by having
+
+Limit offset
+
+Procedures, Functions
+
+Index
+
+Constraints
+
+
+
+
