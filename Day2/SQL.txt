@@ -2,17 +2,104 @@
 
 Creating Database
 
+    - We can Create database into a server by commands 
+    CREATE database name_of_database ; 
+
 Create tables
+    - 
+        CREATE table table_name ; 
 
 Data types
+    INT 
+    CHAR 
+    VARCHAR 
+    TEXT 
+    BOOL 
+    INTEGER 
+    BIGINT 
+    FLOAT 
+    DOUBLE 
+    DATE 
+    TIMESTAMP 
+    YEAR 
+    DATETIME 
+
 
 Insert/Update/Delete/Read data from Table(CRUD Operation)
 
+
+    Select * from table_name;
+
+    INSERT INTO table_name; 
+    Values(); 
+
+    DELETE FROM table_name where condition; 
+
+
+    UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+
+
+
 Aggregate Functions
+
+    SELECT MIN(column_name)
+    FROM table_name
+    WHERE condition;
+
+
+    SELECT MAX(column_name)
+    FROM table_name
+    WHERE condition;
+
+    SELECT COUNT(column_name)
+    FROM table_name
+    WHERE condition;
+
+    SELECT AVG(column_name)
+    FROM table_name
+    WHERE condition;
+
+
+    SELECT SUM(column_name)
+    FROM table_name
+    WHERE condition;
+
+
 
 Relationships, Type of joins
 
+Here are the different types of the JOINs in SQL:
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
 Group by having
+
+    The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+
+    The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s)
+    ORDER BY column_name(s);
+
+
+
+    The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s)
+    HAVING condition
+    ORDER BY column_name(s);
+
 
 Limit offset
 
@@ -20,8 +107,23 @@ Procedures, Functions
 
 Index
 
+    The CREATE INDEX statement is used to create indexes in tables.
+
+    Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes, they are just used to speed up searches/queries.
+
+    CREATE INDEX index_name
+    ON table_name (column1, column2, ...);
+
 Constraints
 
+The following constraints are commonly used in SQL:
 
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
 
 
