@@ -1,0 +1,50 @@
+==> mongodb-community
+To start mongodb/brew/mongodb-community now and restart at login:
+  brew services start mongodb/brew/mongodb-community
+Or, if you don't want/need a background service you can just run:
+  mongod --config /opt/homebrew/etc/mongod.conf
+
+
+* What are NoSQL Databases?
+
+    A NoSQL database has dynamic schema for unstructured data. Data is stored in many ways which means it can be document-oriented, 
+    column-oriented, graph-based or organized as a KeyValue store. This flexibility means that documents can be created without having 
+    defined structure first. Also each document can have its own unique structure. The syntax varies from database to database, and you 
+    can add fields as you go. 
+
+ *SQL vs NoSQL Databases
+
+    SQL Databases
+    -These databases have fixed or static or predefined schema     
+    -These databases are not suited for hierarchical data storage.
+    -These databases are best suited for complex queries
+    -Vertically Scalable
+    - Follows ACID properties
+
+    NoSQL Databases 
+        -They have dynamic schema 
+        -These databases are best suited for hierarchical data storage.
+        -These databases are not so good for complex queries
+        - Horizontally Scalable
+        - Follows BASE(Basically Avaialable Soft state Eventually consistent)
+        - Follows CAP(consistency, availability, partition tolerance)      
+                 	            
+*Database, Collection, Documents
+
+
+*CRUD Operation
+
+
+*Aggregation, Pipeline
+
+
+*Indexes
+
+
+*Model Designing
+
+
+*Replication vs Sharding
+
+
+*Transaction
