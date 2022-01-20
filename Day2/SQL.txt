@@ -1,5 +1,14 @@
 ------Topics To explore
 
+Advantage of Mysql 
+    - Cross platform 
+    - used with multiple languages 
+    - mysql is open source 
+    - mysql is rdbms 
+    - mysql server is fast , reliable , scalable and 
+        easy to use 
+    - works in client/server or embedded systems . 
+
 Creating Database
 
     - We can Create database into a server by commands 
@@ -11,18 +20,25 @@ Create tables
 
 Data types
     INT 
-    CHAR 
-    VARCHAR 
-    TEXT 
+    CHAR(size) 0 TO 255 
+    VARCHAR(size) 0 TO 65535 
+    TEXT(size) 
+    TINYTEXT 255 characters 
+    MEDIUMTEXT
+    LONGTEXT
     BOOL 
     INTEGER 
     BIGINT 
     FLOAT 
-    DOUBLE 
+    DOUBLE(size , d)
+    DECIMAL(size = 60 , d = 30)
     DATE 
     TIMESTAMP 
     YEAR 
     DATETIME 
+    ENUM(VAL1 , VAL2 , VAL3 , VAL4 ....)
+    SET(VAL1 , VAL2 ....)
+
 
 
 Insert/Update/Delete/Read data from Table(CRUD Operation)
