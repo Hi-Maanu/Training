@@ -1,0 +1,18 @@
+1.SELECT PHONE FROM USERS LEFT JOIN CART ON USERS.USER_ID = CART.USER_ID WHERE CART_ID IS NULL;
+
+2.1. select user_id, sum(total_amount) from cart group by user_id order by sum(total_amount) desc limit 5;
+
+2.2 select cart_id, total_amount as orders from cart order by total_amount desc limit 5;
+
+2.3 select product_id from cart_item group by product_id order by sum(quantity) desc limit 5;
+
+3.select distinct city , count(city) from addresses group by city;
+
+
+4.select count(cart_id) from cart where updated_at <= '2022-01-14 15:03:38'
+
+
+5.SELECT cart_id from cart  where total_amount > (select avg(total_amount) from cart);
+
+6.select if(total_amount-2000 < 0, '0', total_amount-2000) as total_amount from cart;
+
