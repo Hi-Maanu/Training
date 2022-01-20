@@ -1,0 +1,186 @@
+Basic Syntax of Javascript(for loop if else etc.), Data types
+------------------------------------------------------------------------------------
+Callback
+   
+    A callback is a function passed as an argument to another function
+    This technique allows a function to call another function
+    A callback function can run after another function has finished
+    A callback is a function passed as an argument to another function.
+------------------------------------------------------------------------------------
+
+Promise
+        -A JavaScript Promise object contains both the producing code and calls to the consuming code:
+        
+        let myPromise = new Promise(function(myResolve, myReject) {
+            // "Producing Code" (May take some time)
+            
+              myResolve(); // when successful
+              myReject();  // when error
+            });
+            
+            // "Consuming Code" (Must wait for a fulfilled Promise)
+            myPromise.then(
+              function(value) { /* code if successful */ },
+              function(error) { /* code if some error */ }
+            );
+
+------------------------------------------------------------------------------------
+
+Async Await
+    -
+    The keyword async before a function makes the function return a promise:   
+        async function myFunction() {
+            return "Hello";
+          } 
+          Is the same as:
+
+          function myFunction() {
+            return Promise.resolve("Hello");
+          }
+
+        * async function myFunction() {
+            return "Hello";
+          }
+          myFunction().then(
+            function(value) {myDisplayer(value);},
+            function(error) {myDisplayer(error);}
+          );
+
+    - 
+    The keyword await before a function makes the function wait for a promise:
+        let value = await promise;
+
+        The await keyword can only be used inside an async function.
+
+        * async function myDisplay() {
+            let myPromise = new Promise(function(resolve, reject) {
+              resolve("I love You !!");
+            });
+            document.getElementById("demo").innerHTML = await myPromise;
+          }
+          
+          myDisplay();
+
+
+------------------------------------------------------------------------------------
+
+
+Event Listeners
+
+
+------------------------------------------------------------------------------------
+
+AJAX
+    - AJAX stands for asynchronous Javascript and Xml 
+    - Ajax is a set of technologies not a language . 
+    - Ajax enables to fetch data asynchronousaly without refreshing the whole existing webpage. 
+    - Ajax uses json nowadays Instead of Xml 
+
+    why use AJAX
+    - No page reload/refresh 
+    - saves network bandwidth 
+
+    how it works 
+    - it uses XHR(xmlhttprequest) to achieve this
+    - data can be transferred using any format and protocol 
+------------------------------------------------------------------------------------
+
+Closure
+    - A closure is a function having access to the parent scope, even after the parent function has closed.
+    - function with its lexical scope 
+------------------------------------------------------------------------------------
+
+this Keyword
+    - The JavaScript this keyword refers to the object it belongs to.
+        
+    const person = {
+        firstName: "John",
+        lastName : "Doe",
+        id       : 5566,
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+        In a method, this refers to the owner object.
+        Alone, this refers to the global object.
+        In a function, this refers to the global object.
+        In a function, in strict mode, this is undefined.
+        In an event, this refers to the element that received the event.
+        Methods like call(), and apply() can refer this to any object.
+------------------------------------------------------------------------------------
+
+Settimeout vs SetInterval
+
+
+------------------------------------------------------------------------------------
+
+LocalStorage vs SessionStorage vs Cookie
+        _LocalStorage 
+            localstorage is the storage assigned to a webpage on the local memory to store the requested operations. 
+            this storage has no expiry unless cleared by the user explicitly . 
+            
+        - SessionStorage 
+            SessionStorage is the storage given until the browswer is not closed by the user. 
+            it is volatile storage. 
+
+        - cookie 
+        Cookies are data, stored in small text files, on your computer.
+
+        When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+        
+        Cookies were invented to solve the problem "how to remember information about the user":
+        
+        When a user visits a web page, his/her name can be stored in a cookie.
+        Next time the user visits the page, the cookie "remembers" his/her name.
+        Cookies are saved in name-value pairs like:
+        
+        username = John Doe
+------------------------------------------------------------------------------------
+
+
+Regular Expressions
+        -A regular expression is a sequence of characters that forms a search pattern.
+        
+        The search pattern can be used for text search and text replace operations.
+        let text = "Visit W3Schools";
+        let n = text.search(/w3schools/i);
+
+        The replace() method replaces a specified value with another value in a string:
+        let text = "Visit Microsoft!";
+        let result = text.replace(/microsoft/i, "W3Schools");
+
+        test method => /e/.test("The best things in life are free!");
+
+------------------------------------------------------------------------------------
+
+var vs let vs const
+    -var - global scoped 
+    -const - block scoped and cannot be reinitialised 
+    -let - block scoped 
+
+------------------------------------------------------------------------------------
+
+Array, Objects
+    array - 
+    Object - 
+------------------------------------------------------------------------------------
+
+History Object
+------------------------------------------------------------------------------------
+
+
+Arrow Functions
+
+    - Arrow functions allows us to write shorter functions 
+    
+    // regular function 
+        function print()
+        {
+            return "hello World"; 
+        }
+    // arrow function 
+
+        let val = () => "Hello World";
+
+ ------------------------------------------------------------------------------------
+
