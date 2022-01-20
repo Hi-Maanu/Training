@@ -6,30 +6,16 @@ db.cart.aggregate([
 
 //2.total order amount per user
 
-db.cart.aggregate([
-    {$group: 
-        {_id: "$User_Id",
-        total: 
-        {$sum: "$Amount"}
-        }
-    }
-])
+ db.cart.aggregate([ { $group: { _id:"$userId", total: {$sum:"$amount"} } } ])
+
 
 //3.frequency of prodcuts ordered
 
-db.cart.aggregate([
-       { "$unwind" : "$Cart_Items" },
-    { "$group": { "_id": "$Cart_Items.product_id", "count": { "$sum": "$Cart_Items.quantity"} } },
-])
+db.cart.aggregate([ {$group :  {_id : "$cartItems.productId","count":{"$sum" : "$cartItems.Quantity"} } } ] )
 
 //4.city with most orders
-
-db.cart.aggregate(
-    [  
-        {"$group" : {_id:"$Shipping_Address.city", count:{$sum:1}}},
-        { "$sort": {
-            "count": -1
-          }
-        },
-        {$limit:1}
-    ])
+> db.cart.aggregate([
+ {"$group" : {_id : "$shippingAddress.city",count:{$sum:1}}},
+ {"$sort":{
+ "count":-1
+ }},{$limit:1}] )
