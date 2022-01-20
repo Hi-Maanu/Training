@@ -1,0 +1,24 @@
+{
+	"_id" : ObjectId("61e65f02fcf9ed2aa59ddde3"),
+	"name" : "Books",
+	"Price" : 100,
+	"Quantity" : 100
+}
+{
+	"_id" : ObjectId("61e65f02fcf9ed2aa59ddde4"),
+	"name" : "Pens",
+	"Price" : 10,
+	"Quantity" : 100
+}
+{
+	"_id" : ObjectId("61e65f60fcf9ed2aa59ddde5"),
+	"name" : "Pencil",
+	"Price" : 5,
+	"Quantity" : 1000
+}
+{
+	"_id" : ObjectId("61e65f60fcf9ed2aa59ddde6"),
+	"name" : "PencilBox",
+	"Price" : 100,
+	"Quantity" : 100
+}

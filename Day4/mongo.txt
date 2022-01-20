@@ -31,8 +31,45 @@ Or, if you don't want/need a background service you can just run:
                  	            
 *Database, Collection, Documents
 
+    Database
+        -Database is a physical container for collections. Each database gets its own set of files on the file system.
+          A single MongoDB server typically has multiple databases.
+
+Collection
+     -Collection is a group of MongoDB documents. It is the equivalent of an RDBMS table.
+      A collection exists within a single database. Collections do not enforce a schema. 
+      Documents within a collection can have different fields. Typically, all documents in a collection are of similar or related purpose.
+
+Document
+    -A document is a set of key-value pairs. Documents have dynamic schema. 
+    Dynamic schema means that documents in the same collection do not need to have the same set of fields or structure,
+    and common fields in a collection's documents may hold different types of data.
+
 
 *CRUD Operation
+    create = MongoDB use DATABASE_NAME is used to create database. 
+    The command will create a new database if it doesn't exist, otherwise it will return the existing database.
+
+    MongoDB db.createCollection(name, options) is used to create collection.
+
+    Read = To check your currently selected database, use the command db
+    If you want to check your databases list, use the command show dbs.
+
+    You can check the created collection by using the command show collections.
+
+    >show collections
+
+    Update = 
+
+    Delete =
+        
+        - Basic syntax of dropDatabase() command is as follows −
+
+         db.dropDatabase()
+
+        - MongoDB's db.collection.drop() is used to drop a collection from the database. 
+          Basic syntax of drop() command is as follows −
+            db.COLLECTION_NAME.drop()
 
 
 *Aggregation, Pipeline
@@ -42,9 +79,45 @@ Or, if you don't want/need a background service you can just run:
 
 
 *Model Designing
+    - There are two type of model Designing in MongoDB 
+        1-embedded model Designing 
+        2- normalised mode Designing
 
 
 *Replication vs Sharding
 
 
 *Transaction
+
+
+* Datatypes 
+
+String − This is the most commonly used datatype to store the data. String in MongoDB must be UTF-8 valid.
+
+Integer − This type is used to store a numerical value. Integer can be 32 bit or 64 bit depending upon your server.
+
+Boolean − This type is used to store a boolean (true/ false) value.
+
+Double − This type is used to store floating point values.
+
+Min/ Max keys − This type is used to compare a value against the lowest and highest BSON elements.
+
+Arrays − This type is used to store arrays or list or multiple values into one key.
+
+Timestamp − ctimestamp. This can be handy for recording when a document has been modified or added.
+
+Object − This datatype is used for embedded documents.
+
+Null − This type is used to store a Null value.
+
+Symbol − This datatype is used identically to a string; however, it's generally reserved for languages that use a specific symbol type.
+
+Date − This datatype is used to store the current date or time in UNIX time format. You can specify your own date time by creating object of Date and passing day, month, year into it.
+
+Object ID − This datatype is used to store the document’s ID.
+
+Binary data − This datatype is used to store binary data.
+
+Code − This datatype is used to store JavaScript code into the document.
+
+Regular expression − This datatype is used to store regular expression

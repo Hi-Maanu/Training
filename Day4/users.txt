@@ -1,0 +1,56 @@
+{
+	"_id" : ObjectId("61e65c3ffcf9ed2aa59ddddf"),
+	"fName" : "Himanshu",
+	"lname" : "Saini",
+	"email" : "abc@gmail.com",
+	"password" : "212123",
+	"phone" : "7020542824",
+	"address" : {
+		"street" : "abc colony",
+		"city" : "deoband",
+		"country" : "india",
+		"postCode" : "201033"
+	}
+}
+{
+	"_id" : ObjectId("61e65ca8fcf9ed2aa59ddde0"),
+	"fName" : "Deepak",
+	"lname" : "Saini",
+	"email" : "abcd@gmail.com",
+	"password" : "2123",
+	"phone" : "7020545824",
+	"address" : {
+		"street" : "abc colony",
+		"city" : "deoband",
+		"country" : "india",
+		"postCode" : "201033"
+	}
+}
+{
+	"_id" : ObjectId("61e65d05fcf9ed2aa59ddde1"),
+	"fName" : "rahul",
+	"lname" : "kumar",
+	"email" : "def@gmail.com",
+	"password" : "212322",
+	"phone" : "7999545824",
+	"address" : {
+		"street" : "def colony",
+		"city" : "dehat",
+		"country" : "india",
+		"postCode" : "201035"
+	}
+}
+{
+	"_id" : ObjectId("61e65d67fcf9ed2aa59ddde2"),
+	"fName" : "raja",
+	"lname" : "singh",
+	"email" : "xyz@gmail.com",
+	"password" : "212",
+	"phone" : "7999544444",
+	"address" : {
+		"street" : "xyz colony",
+		"city" : "behat",
+		"country" : "india",
+		"postCode" : "201035"
+	}
+}

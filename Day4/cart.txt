@@ -1,0 +1,40 @@
+{
+	"_id" : ObjectId("61e66385fcf9ed2aa59ddde7"),
+	"userId" : "61e65c3ffcf9ed2aa59ddddf",
+	"orderStatus" : "completed",
+	"amount" : 5000,
+	"shippingAddress" : {
+		"street" : "abc colony",
+		"city" : "deoband",
+		"country" : "India",
+		"Pin" : 247544
+	},
+	"cartItems" : {
+		"productId" : "61e65f02fcf9ed2aa59ddde3",
+		"Quantity" : 50
+	},
+	"payment" : {
+		"type" : "COD",
+		"date" : "2022-01-05"
+	}
+}
+{
+	"_id" : ObjectId("61e664dffcf9ed2aa59ddde8"),
+	"userId" : "61e65ca8fcf9ed2aa59ddde0",
+	"orderStatus" : "completed",
+	"amount" : 2000,
+	"shippingAddress" : {
+		"street" : "def colony",
+		"city" : "deoband",
+		"country" : "India",
+		"Pin" : 247545
+	},
+	"cartItems" : {
+		"productId" : "61e65f02fcf9ed2aa59ddde3",
+		"Quantity" : 20
+	},
+	"payment" : {
+		"type" : "Online",
+		"date" : "2022-01-02"
+	}
+}
