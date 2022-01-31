@@ -46,5 +46,5 @@
      In the most frequent use cases, git merge is used to combine two branches. ... 
      Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence. 
     Rebase is an action in Git that allows you to rewrite commits from one branch onto another branch. Essentially, Git is deleting commits 
-    from one branch and adding them onto another.
+    from one branch and adding them onto another. 
 
