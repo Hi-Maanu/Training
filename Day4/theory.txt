@@ -1,0 +1,60 @@
+What are NoSQL Databases?
+    - NoSQL databases (aka "not only SQL") are non-tabular databases and store data differently than relational tables.
+     NoSQL databases come in a variety of types based on their data model.
+      The main types are document, key-value, wide-column, and graph. 
+      They provide flexible schemas and scale easily with large amounts of data and high user loads.
+
+Database, Collection, Documents
+    -MongoDB stores data records as documents (specifically BSON documents) which are gathered together in collections. 
+    A database stores one or more collections of documents.
+
+
+CRUD Operation
+   1 -  Create or insert operations add new documents to a collection. 
+    If the collection does not currently exist, insert operations will create the collection.
+
+    MongoDB provides the following methods to insert documents into a collection:
+
+    db.collection.insertOne() 
+    db.collection.insertMany()
+
+    2 - Read operations retrieve documents from a collection; i.e. query a collection for documents. 
+        MongoDB provides the following methods to read documents from a collection:
+
+        db.collection.find()
+    
+    3 - Update operations modify existing documents in a collection.
+        MongoDB provides the following methods to update documents of a collection:
+
+        db.collection.updateOne() 
+        db.collection.updateMany() 
+        db.collection.replaceOne() 
+
+    4 - Delete operations remove documents from a collection. 
+        MongoDB provides the following methods to delete documents of a collection:
+
+        db.collection.deleteOne() 
+        db.collection.deleteMany() 
+
+
+Aggregation, Pipeline
+
+    -Aggregation operations process multiple documents and return computed results. 
+    You can use aggregation operations to:
+
+        Group values from multiple documents together.
+        Perform operations on the grouped data to return a single result.
+        Analyze data changes over time.
+
+        An aggregation pipeline consists of one or more stages that process documents:
+
+        Each stage performs an operation on the input documents. For example, a stage can filter documents, group documents, and calculate values.
+        The documents that are output from one stage are input to the next stage.
+        An aggregation pipeline can return results for groups of documents. For example, return the total, average, maximum, and minimum values.
+
+Indexes 
+    - To create an index in the Mongo Shell, use db.collection.createIndex().
+    Indexes are special data structures [1] that store a small portion of the collection's data set in an easy to traverse form. 
+    The index stores the value of a specific field or set of fields, ordered by the value of the field. 
+
+
