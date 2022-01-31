@@ -2,7 +2,6 @@
 
 Advantage of Mysql 
     - Cross platform 
-    - used with multiple languages 
     - mysql is open source 
     - mysql is rdbms 
     - mysql server is fast , reliable , scalable and 
